@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Zihong Xu, PhD student in Mathematics at the University of Wisconsin–Madison.">
+    <meta name="description" content="Zihong Xu, Ph.D. student in Mathematics at the University of Wisconsin–Madison. Research in combinatorial optimization and polyhedral combinatorics.">
     <title>Zihong Xu | UW–Madison</title>
 
     <style>
         body {
             font-family: Arial, sans-serif;
             max-width: 850px;
-            margin: 60px auto;
+            margin: 50px auto;
             padding: 0 25px;
             color: #333;
             line-height: 1.7;
@@ -18,11 +18,13 @@
 
         h1 {
             font-size: 36px;
-            margin-bottom: 5px;
+            margin: 0 0 10px;
+            font-weight: 600;
         }
 
         h2 {
             font-size: 24px;
+            font-weight: 600;
             border-bottom: 1px solid #ddd;
             padding-bottom: 8px;
             margin-top: 35px;
@@ -38,60 +40,123 @@
         }
 
         nav {
+            display: flex;
+            gap: 28px;
+            flex-wrap: wrap;
+            padding-bottom: 15px;
             margin-bottom: 35px;
+            border-bottom: 1px solid #ddd;
         }
 
         nav a {
-            margin-right: 20px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        nav a.active {
+            color: #2563a6;
+            font-weight: bold;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 35px;
+        }
+
+        .profile img {
+            width: 180px;
+            border-radius: 8px;
+        }
+
+        .profile p {
+            margin: 8px 0;
+        }
+
+        .social-links {
+            margin-top: 12px;
+        }
+
+        .social-links a {
+            margin-right: 15px;
         }
 
         footer {
             margin-top: 60px;
+            padding-top: 15px;
+            border-top: 1px solid #ddd;
             font-size: 14px;
             color: #888;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                margin: 25px auto;
+                padding: 0 20px;
+            }
+
+            .profile {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
+
+            .profile img {
+                width: 150px;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
         }
     </style>
 </head>
 
 <body>
 
-    <div style="display: flex; align-items: center; gap: 30px;">
-        <img src="Profile.jpg" alt="Zihong Xu"
-             style="width: 180px; border-radius: 8px;">
-    
+    <nav>
+        <a href="index.html" class="active">About</a>
+        <a href="publications.html">Publications</a>
+        <a href="Zihong_Xu_CV.pdf" target="_blank">CV</a>
+    </nav>
+
+    <div class="profile">
+
+        <img src="Profile.jpg" alt="Zihong Xu">
+
         <div>
             <h1>Zihong Xu</h1>
+
             <p>
                 Ph.D. Student in Mathematics<br>
                 University of Wisconsin–Madison<br>
                 Email: <a href="mailto:zxu455@wisc.edu">zxu455@wisc.edu</a>
             </p>
-            <p>
-                <a href="https://www.linkedin.com/in/zihong-xu/" target="_blank">LinkedIn</a>
-                &nbsp;|&nbsp;
-                <a href="https://scholar.google.com/citations?user=NMJSzR8AAAAJ&hl=en" target="_blank">Google Scholar</a>
+
+            <p class="social-links">
+                <a href="https://www.linkedin.com/in/zihong-xu/"
+                   target="_blank" rel="noopener noreferrer">LinkedIn</a>
+
+                <a href="https://scholar.google.com/citations?user=NMJSzR8AAAAJ&amp;hl=en"
+                   target="_blank" rel="noopener noreferrer">Google Scholar</a>
             </p>
         </div>
+
     </div>
 
-    <nav>
-        <a href="index.html">About</a>
-        <a href="publications.html">Publications</a>
-        <a href="Zihong_Xu_CV.pdf" target="_blank">CV</a>
-    </nav>
-
-    <h2 id="about">About Me</h2>
+    <h2>About Me</h2>
 
     <p>
         I am a Ph.D. student in the Department of Mathematics
         at the University of Wisconsin–Madison, advised by
-        Alberto Del Pia. My current research focuses on 
+        Alberto Del Pia. My current research focuses on
         combinatorial and mathematical optimization.
         Previously, I worked on applied and computational
         mathematics, as well as machine learning.
     </p>
 
-    <h2 id="research">Research Interests</h2>
+    <h2>Research Interests</h2>
 
     <ul>
         <li>Combinatorial Optimization</li>
@@ -99,14 +164,6 @@
         <li>Graph Theory</li>
         <li>Polyhedral Combinatorics</li>
     </ul>
-
-    <h2 id="publications">Publications & Preprints</h2>
-
-    <p>Coming soon.</p>
-
-    <h2 id="teaching">Teaching</h2>
-
-    <p>University of Wisconsin–Madison</p>
 
     <footer>
         © 2026 Zihong Xu
