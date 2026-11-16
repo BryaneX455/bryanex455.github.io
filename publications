@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Publications | Zihong Xu</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 850px;
+            margin: 50px auto;
+            padding: 0 25px;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        a {
+            color: #2563a6;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        nav {
+            display: flex;
+            gap: 28px;
+            flex-wrap: wrap;
+            padding-bottom: 15px;
+            margin-bottom: 35px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        nav a {
+            color: #555;
+        }
+
+        nav a.active {
+            color: #2563a6;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 32px;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding-top: 15px;
+            border-top: 1px solid #ddd;
+            font-size: 14px;
+            color: #888;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">About</a>
+        <a href="publications.html" class="active">Publications</a>
+        <a href="Zihong_Xu_CV.pdf" target="_blank">CV</a>
+    </nav>
+
+    <h1>Publications &amp; Preprints</h1>
+
+    <p>
+        For my latest publications, please visit my
+        <a href="https://scholar.google.com/citations?user=NMJSzR8AAAAJ&amp;hl=en"
+           target="_blank" rel="noopener noreferrer">Google Scholar profile</a>.
+    </p>
+
+    <footer>
+        © 2026 Zihong Xu
+    </footer>
+
+</body>
+</html>
